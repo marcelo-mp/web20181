@@ -1,0 +1,46 @@
+<body>
+<div id="app-6">
+  <p>{{ Formulario}}</p>
+  <label for="">Nome</label><br>
+  <input type="text"  v-model="name">
+  <br><br>
+
+  <label for="">Telefone</label><br>
+  <input type="text"  v-model="telefone">
+  <br><br>
+
+  <label for="">CPF</label><br>
+  <input type="text"  v-model="cpf">
+  <br><br>
+
+  <label for="">E-mail</label><br>
+  <input type="text"  v-model="email">
+  <br><br>
+
+  <button>Cadastrar</button>
+
+  <hr>
+
+  Nome: {{nome}}<br>
+  E-mail: {{email}}<br>
+  CPF: {{cpf}}<br>
+  Telefone: {{telefone}}<br>
+</div>
+
+<script src="http://unpkg.com.veu"></script>
+
+<script>
+var app6 = new Vue({
+  el: '#app-6',
+  data: {
+  	Formulario: "Preencha o Formulário a seguir:",
+    nome: "",
+    telefone: "",
+    cpf: "",
+    email:""
+  }
+});
+</script>
+</body>
+
+<!-- caixa de difitação com a fonte em cima do que se é digitado -->
